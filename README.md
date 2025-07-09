@@ -49,7 +49,7 @@ This Project simulates a read team scenario where a legitimate installer is modi
 > [!IMPORTANT]
 > **Want to reproduce the lab?**
 > 
-> Follow the steps provided [here.](/steps/setup.md) 
+> Follow the steps provided [here.](/steps/README.md) 
 
 ## Video
 
